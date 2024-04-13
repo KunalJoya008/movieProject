@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import ImgCard from "./ImgCard";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -46,9 +47,11 @@ const MovieSlider = ({ apiEndpoint }) => {
         <Slider {...settings}>
           {movies.map((movie) => (
             <div key={movie.id} className="slide-item">
-              <ImgCard
-                imageUrl={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-              />
+              <Link to={`/details/${movie.id}`}>
+                <ImgCard
+                  imageUrl={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                />
+              </Link>
             </div>
           ))}
         </Slider>
