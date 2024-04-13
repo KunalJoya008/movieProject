@@ -59,7 +59,7 @@ const Details = () => {
               )}
             </ul>
           </div>
-          
+          <p className="text-white text-end mb-0">FilmFusion</p>
         </div>
       </div>
     </>
