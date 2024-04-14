@@ -33,12 +33,12 @@ const MovieSlider = ({ apiEndpoint }) => {
   }
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 500,
-    slidesToShow: 4,
+    speed: 800,
+    slidesToShow: 5,
     slidesToScroll: 3,
-    autoplay: false,
+    autoplay: true,
   };
 
   return (

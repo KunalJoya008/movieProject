@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 body{
-  background-color: rgb(14, 0, 48);
+  background-color: rgb(10, 1, 32);
+  font-family: 'Ostwald', sans-serif;
 }

@@ -11,8 +11,8 @@ const Home = () => {
     <div className="homePage">
         <Header className="mb-5 "/>
         <HeadImgs className=""/>
-        <HeroBanner />
-      <Trending className="mb-5"/>
+        {/* <HeroBanner /> */}
+      <Trending className="mt-20 py-8"/>
       <TopRated className="mt-5" />
       <Footer/>
     </div>

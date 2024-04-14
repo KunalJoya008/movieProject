@@ -30,7 +30,7 @@ const HeroBanner = () => {
 
     tl.to(".img", {
       stagger: 0.2,
-      y: -550,
+      y: -600,
       scrub: true,
     });
   }, []); // empty dependency array means this effect runs once after initial render
