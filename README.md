@@ -1,3 +1,6 @@
+# Project is live!!
+https://filmfusion001.netlify.app/
+
 # Movie Search Project : FILMFUSION
 
 This project is a movie search web application built with React.js, Tailwind CSS, Vite, and the TMDB API. It allows users to search for movies, view details about each movie, and find information about trending and upcoming movies.
