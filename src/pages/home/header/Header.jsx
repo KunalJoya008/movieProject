@@ -5,6 +5,12 @@ const Header = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
 
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      handleSearch();
+    }
+  };
+
   const handleSearch = () => {
     navigate(`/search/${searchTerm}`);
   };
@@ -17,6 +23,7 @@ const Header = () => {
         placeholder="Search Movies"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
+        onKeyPress={handleKeyPress}
       />
       <button
         className="py-2 px-4 rounded-md bg-slate-500 text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
