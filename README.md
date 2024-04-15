@@ -1,6 +1,7 @@
 # Movie Search Project : FILMFUSION
 
 This project is a movie search web application built with React.js, Tailwind CSS, Vite, and the TMDB API. It allows users to search for movies, view details about each movie, and find information about trending and upcoming movies.
+by api call front poster is also changing everytime you refreash.
 
 ## Features
 
@@ -17,6 +18,6 @@ This project is a movie search web application built with React.js, Tailwind CSS
 - **TMDB API**: Integrated to fetch movie data including search results, details, and trending/upcoming movies.
   
 ## Features to be added soon 
--authentication
--user profile
--add your wishlist
+- authentication
+- user profile
+- add your wishlist
