@@ -40,7 +40,6 @@ function SearchResults() {
                   alt={movie.title}
                   className="rounded-sm"
                 />
-                <h1 className="text-xl font-medium p-4">{movie.title}</h1>
               </div>
             </Link>
           </div>
