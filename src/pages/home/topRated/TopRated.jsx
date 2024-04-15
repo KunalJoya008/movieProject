@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import Slider from '../../../components/Slider'
 const TopRated = () => {
     const TopRated = "https://api.themoviedb.org/3/movie/top_rated?api_key=43219b7b77a33f9cc083e6a7f15bce09";

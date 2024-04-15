@@ -39,9 +39,9 @@ const HeadImgs = () => {
             className="w-full h-auto rounded-lg"
           />
           <div>
-            <h2 className="text-white absolute ml-20 -mt-20 text-4xl">{randomMovie.title}</h2>
-            {/* <h3 className="text-white ml-30 -mt-20 absolute">Upcoming movies</h3> */}
-            {/* <p>{randomMovie.tagline}</p> */}
+            <h2 className="text-white absolute ml-20 -mt-20 text-4xl">
+              {randomMovie.title}
+            </h2>
           </div>
         </div>
       )}

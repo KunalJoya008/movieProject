@@ -47,6 +47,7 @@ const Details = () => {
         setError(error.message);
       }
     };
+    const movieRatingStars = () => {};
 
     fetchMovieDetails();
     fetchRecommendedMovies();

@@ -1,12 +1,11 @@
-import React from 'react'
-import SearchResults from '../../components/searchResult/SearchResult'
+import React from "react";
+import SearchResults from "../../components/searchResult/SearchResult";
 const Searched = () => {
   return (
-   <>
-   <SearchResults />
-   
-   </>
-  )
-}
+    <>
+      <SearchResults />
+    </>
+  );
+};
 
-export default Searched
+export default Searched;

@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <div className="searchInput mx flex-row items-center justify-between sticky top-2 mb-8 z-50">
+    <div className="searchInput  flex-row items-center justify-between sticky top-2 mb-8 z-50">
       <input
         type="text"
         className="py-2 px-4 w-1/3 rounded-md border-neutral-400 mr-2 ml-10 opacity-55"
