@@ -43,7 +43,7 @@ const MovieSlider = ({ apiEndpoint }) => {
 
   return (
     <>
-      <div className="carousel-container">
+      <div className="carousel-container py-10">
         <Slider {...settings}>
           {movies.map((movie) => (
             <div key={movie.id} className="slide-item">

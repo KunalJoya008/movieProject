@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 import Footer from "../home/footer/Footer";
-
+import Header from "../home/header/Header";
 
 const Details = () => {
   const { movie_id } = useParams();
@@ -70,40 +70,47 @@ const Details = () => {
   };
 
   return (
-    <div className="details-container">
-      <div className="details-content flex text-white w-3/4 ml-auto mr-auto">
-        <div className="movie-poster w-full h-auto p-5 ml-10">
-          <img
-            src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-            alt={movie.title}
-            className="rounded-xl"
-          />
+    <>
+      <Header />
+      <div className="details-container">
+        <div className="details-content flex text-white w-3/4 ml-auto mr-auto">
+          <div className="movie-poster w-full h-auto p-5 ml-10">
+            <img
+              src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+              alt={movie.title}
+              className="rounded-xl"
+            />
+          </div>
+          <div className="movie-details">
+            <h2 className="text-4xl font-extrabold p-5 text-start">
+              {movie.title}
+            </h2>
+            <p className="text-start p-5">Release Date: {movie.release_date}</p>
+            <p className="w-3/4 p-10">Overview: {movie.overview}</p>
+            <p className="text-start p-5">Ratings: {movie.vote_average}</p>
+          </div>
         </div>
-        <div className="movie-details">
-          <h2 className="text-4xl font-extrabold p-5 text-start">{movie.title}</h2>
-          <p className="text-start p-5">Release Date: {movie.release_date}</p>
-          <p className="w-3/4 p-10">Overview: {movie.overview}</p>
-          <p className="text-start p-5">Ratings: {movie.vote_average}</p>
+        <div className="recommended-section mb-8 mt-16 w-full ml-auto mr-auto">
+          <h3 className="text-white text-4xl text-start p-3">
+            Recommended Movies
+          </h3>
+          <Slider {...settings}>
+            {recommendedMovies.map((movie) => (
+              <div key={movie.id}>
+                <Link to={`/details/${movie.id}`}>
+                  <img
+                    src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                    alt={movie.title}
+                    className="p-3 rounded-xl w-4/5 h-auto"
+                  />
+                </Link>
+              </div>
+            ))}
+          </Slider>
         </div>
+        <Footer />
       </div>
-      <div className="recommended-section mb-8 mt-16 w-full ml-auto mr-auto">
-        <h3 className="text-white text-4xl text-start p-3">Recommended Movies</h3>
-        <Slider {...settings}>
-          {recommendedMovies.map((movie) => (
-            <div key={movie.id}>
-              <Link to={`/details/${movie.id}`}>
-              <img
-                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                alt={movie.title}
-                className="p-3 rounded-xl w-4/5 h-auto"
-              />
-              </Link>
-            </div>
-          ))}
-        </Slider>
-      </div>
-      <Footer/>
-    </div>
+    </>
   );
 };
 

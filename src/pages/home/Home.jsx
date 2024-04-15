@@ -12,7 +12,7 @@ const Home = () => {
         <Header className="mb-5 "/>
         <HeadImgs className=""/>
         {/* <HeroBanner /> */}
-      <Trending className="mt-20 py-8"/>
+      <Trending className="mt-20"/>
       <TopRated className="mt-5" />
       <Footer/>
     </div>

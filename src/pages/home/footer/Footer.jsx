@@ -8,14 +8,14 @@ const Footer = () => {
         <div className="flex  items-center">
           <nav className="space-x-4 text-end">
             <a href="/" className="text-sm hover:text-gray-300">Home</a>
-            <a href="/movies" className="text-sm hover:text-gray-300">Movies</a>
-            <a href="/about" className="text-sm hover:text-gray-300">About Us</a>
-            <a href="/contact" className="text-sm hover:text-gray-300">Contact Us</a>
+            <a href="/#" className="text-sm hover:text-gray-300">Movies</a>
+            <a href="/#" className="text-sm hover:text-gray-300">About Us</a>
+            <a href="/#" className="text-sm hover:text-gray-300">Contact Us</a>
           </nav>
         </div>
-        <div className="mt-4">
-          <p className="text-sm">Follow us:</p>
-          <div className="flex space-x-4 mt-2 text-start">
+        <div className="mt-4 text-end">
+          <p className="text-sm">Know about your favorite movies</p>
+          <div className="flex space-x-4 mt-2 text-end">
             <a href="#" className="text-sm hover:text-gray-300">Facebook</a>
             <a href="#" className="text-sm hover:text-gray-300">Twitter</a>
             <a href="#" className="text-sm hover:text-gray-300">Instagram</a>
