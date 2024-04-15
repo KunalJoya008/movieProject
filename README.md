@@ -21,3 +21,6 @@ by api call front poster is also changing everytime you refreash.
 - authentication
 - user profile
 - add your wishlist
+
+# Demo :
+https://youtu.be/OvMVdNeEVnI
